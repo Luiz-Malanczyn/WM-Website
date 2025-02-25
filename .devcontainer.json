@@ -1,0 +1,26 @@
+{
+  "name": "wm-website",
+  "dockerFile": "Dockerfile",
+  "postCreateCommand": "npm install",
+  "postStartCommand": "npm run dev",
+  "forwardPorts": [5173],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "github.copilot",
+        "github.copilot-chat",
+        "ms-azuretools.vscode-docker",
+        "ms-vscode-remote.remote-containers",
+        "ms-vscode-remote.remote-wsl",
+        "pkief.material-icon-theme",
+        "vue.volar"
+      ],
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+      }
+    }
+  },
+  "remoteUser": "node"
+}
