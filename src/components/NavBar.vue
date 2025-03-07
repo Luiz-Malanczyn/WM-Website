@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { ref, onMounted, onUnmounted } from 'vue'
+
 const menuItems = [
   { name: 'Início', href: '#home' },
   { name: 'Sobre', href: '#sobre' },
@@ -6,12 +8,24 @@ const menuItems = [
   { name: 'Clientes', href: '#clientes' },
   { name: 'Contato', href: '#contato' }
 ]
+
+const isScrolled = ref(false)
+
+onMounted(() => {
+  window.addEventListener('scroll', () => {
+    isScrolled.value = window.scrollY > 50
+  })
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', () => {})
+})
 </script>
 
 <template>
-  <nav class="navbar">
+  <nav class="navbar" :class="{ 'scrolled': isScrolled }">
     <div class="logo">
-      <img src="../assets/logo-WM-sem-fundo.png" alt="Logo" />
+      <img src="../assets/Logo-WM-sem-fundo.png" alt="Logo" />
     </div>
     <div class="menu">
       <a v-for="item in menuItems" 
@@ -31,6 +45,12 @@ const menuItems = [
   width: 100%;
   top: 0;
   z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: rgba(128, 128, 128, 0.95);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo {

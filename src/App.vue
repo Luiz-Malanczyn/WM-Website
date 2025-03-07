@@ -1,35 +1,23 @@
 <script setup lang="ts">
 import NavBar from './components/NavBar.vue'
+import HomeSection from './components/HomeSection.vue'
+import SobreSection from './components/SobreSection.vue'
+import ServicosSection from './components/ServicosSection.vue'
+import ClientesSection from './components/ClientesSection.vue'
+import ContatoSection from './components/ContatoSection.vue'
 </script>
 
 <template>
   <div class="app">
     <div class="hero-container">
       <NavBar />
-      <section id="home" class="home-section">
-        <div class="home-content">
-          <div class="title-container">
-            <h1>Bem-vindo à</h1>
-            <h1>WM Termoplásticos</h1>
-          </div>
-          <p>Buscando através de pessoas comprometidas,<br>
-             a melhoria de seus processos e a satisfação dos seus clientes.</p>
-        </div>
-      </section>
+      <HomeSection />
     </div>
     <main>
-      <section id="sobre">
-        <h2>Sobre</h2>
-      </section>
-      <section id="servicos">
-        <h2>Serviços</h2>
-      </section>
-      <section id="clientes">
-        <h2>Clientes</h2>
-      </section>
-      <section id="contato">
-        <h2>Contato</h2>
-      </section>
+      <SobreSection />
+      <ServicosSection />
+      <ClientesSection />
+      <ContatoSection />
     </main>
   </div>
 </template>
