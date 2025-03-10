@@ -41,6 +41,15 @@
       </div>
     </div>
   </section>
+
+  <section id="parceiros">
+    <h2 class="parceiros-title">Nossos Parceiros</h2>
+    <div class="parceiros-container">
+      <img src="../assets/imagem-parceiros-HUNIV.png" alt="HUNIV" />
+      <img src="../assets/imagem-parceiros-BWI.png" alt="BWI" />
+      <img src="../assets/imagem-parceiros-WM-Treinamentos.png" alt="WM Treinamentos" />
+    </div>
+  </section>
 </template>
 
 <style scoped>
@@ -139,6 +148,41 @@
   z-index: 1;
 }
 
+#parceiros {
+  background-color: #f5f5f5;
+  width: 100%;
+  min-height: 30vh;
+  max-height: fit-content;
+  padding: 3rem 0;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.parceiros-title {
+  color: #FF6B00;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.parceiros-container {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.parceiros-container img {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+
 @media (max-width: 768px) {
   .sobre-container {
     flex-direction: column;
@@ -155,6 +199,17 @@
     width: 100%;
     margin-top: 1rem;
     right: 0;
+  }
+
+  .parceiros-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  #parceiros {
+    height: auto;
+    padding: 2rem 0;
   }
 }
 </style>

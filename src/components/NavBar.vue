@@ -44,7 +44,7 @@ onUnmounted(() => {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 10;
+  z-index: 100;  /* Reduzido de 1000 para 100 */
   transition: background-color 0.3s ease;
 }
 

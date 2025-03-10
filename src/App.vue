@@ -5,6 +5,7 @@ import SobreSection from './components/SobreSection.vue'
 import ServicosSection from './components/ServicosSection.vue'
 import ClientesSection from './components/ClientesSection.vue'
 import ContatoSection from './components/ContatoSection.vue'
+import GalerySection from './components/GalerySection.vue'
 </script>
 
 <template>
@@ -17,6 +18,7 @@ import ContatoSection from './components/ContatoSection.vue'
       <SobreSection />
       <ServicosSection />
       <ClientesSection />
+      <GalerySection />
       <ContatoSection />
     </main>
   </div>
