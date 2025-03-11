@@ -50,13 +50,27 @@ const closeImage = () => {
       </div>
     </div>
 
+<<<<<<< HEAD
     <!-- Image Popup -->
+=======
+>>>>>>> d53107f (add new sections for Galery and Parceiros; update Contato and Clientes sections with detailed information; add new images for branding)
     <div v-if="selectedImage" class="popup-overlay" @click="closeImage">
       <div class="popup-content" @click.stop>
         <img :src="selectedImage.src" :alt="selectedImage.alt" class="popup-image"/>
         <button class="popup-close" @click="closeImage">×</button>
       </div>
     </div>
+<<<<<<< HEAD
+=======
+    <teleport to="body">
+      <div v-if="selectedImage" class="popup-overlay" @click="closeImage">
+        <div class="popup-content" @click.stop>
+          <img :src="selectedImage.src" :alt="selectedImage.alt" class="popup-image"/>
+          <button class="popup-close" @click="closeImage">×</button>
+        </div>
+      </div>
+    </teleport>
+>>>>>>> d53107f (add new sections for Galery and Parceiros; update Contato and Clientes sections with detailed information; add new images for branding)
   </section>
 </template>
 
