@@ -2,8 +2,8 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 
 const menuItems = [
-  { name: 'Início', href: '#home' },
-  { name: 'Sobre', href: '#sobre' },
+  { name: 'Home', href: '#home' },
+  { name: 'Sobre Nós', href: '#sobre' },
   { name: 'Serviços', href: '#servicos' },
   { name: 'Clientes', href: '#clientes' },
   { name: 'Contato', href: '#contato' }
@@ -40,21 +40,26 @@ onUnmounted(() => {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2vh 5%;
+  padding: 1.5vh 1.5%;
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 100;  /* Reduzido de 1000 para 100 */
+  z-index: 100;
   transition: background-color 0.3s ease;
 }
 
 .navbar.scrolled {
-  background-color: rgba(128, 128, 128, 0.95);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0.5vw 0.5vh rgba(0, 0, 0, 0.3);
 }
 
 .logo {
   width: 20%;
+  transition: width 0.5s ease;
+}
+
+.scrolled .logo {
+  width: 10%;
 }
 
 .logo img {
@@ -72,8 +77,8 @@ onUnmounted(() => {
   text-decoration: none;
   color: white;
   font-weight: 500;
-  font-size: 1.2vw;
-  padding: 1vh 1.5vw;
+  font-size: 0.9vw;
+  padding: 1vh 1vw;
   position: relative;
   transition: background-color 0.3s;
 }
@@ -85,8 +90,7 @@ onUnmounted(() => {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #dc3704;
+  background-color: #DC3703;
   z-index: -1;
-  opacity: 0.4;
 }
 </style>

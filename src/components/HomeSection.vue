@@ -2,11 +2,13 @@
   <section id="home" class="home-section">
     <div class="home-content">
       <div class="title-container">
-        <h1>Bem-vindo à</h1>
-        <h1>WM Termoplásticos</h1>
+        <h1>Bem-vindo à <br>
+          WM Termoplásticos</h1>
       </div>
-      <p>Buscando através de pessoas comprometidas,<br>
-         a melhoria de seus processos e a satisfação dos seus clientes.</p>
+      <p>Trazer melhoria contínua nos processos satisfazendo as necessidades <br>
+        de nossos clientes através do comprometimento das pessoas de <br>
+        nosso time.
+      </p>
     </div>
   </section>
 </template>
@@ -47,8 +49,8 @@
 
 .home-section p {
   color: white;
-  font-size: 1.5vw;
-  line-height: 1.8;
+  font-size: 1.8vw;
+  line-height: 1.5;
   margin-top: 2vh;
 }
 </style>

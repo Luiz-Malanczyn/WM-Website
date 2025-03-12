@@ -35,7 +35,7 @@ const clients = [
 }
 
 .clientes-title {
-  color: #FF6B00;
+  color: #DC3703;
   font-size: 2.5rem;
   margin-bottom: 3rem;
 }

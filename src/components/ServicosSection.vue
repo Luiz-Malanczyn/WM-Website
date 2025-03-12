@@ -93,7 +93,7 @@ const togglePopup = () => {
 }
 
 .segmentos-text {
-  color: #FF6B00;
+  color: #DC3703;
   font-size: 1.2rem;
   font-weight: 500;
   display: block;
@@ -148,7 +148,7 @@ const togglePopup = () => {
 }
 
 .equipment-button {
-  background-color: #FF6B00;
+  background-color: #DC3703;
   color: white;
   border: none;
   padding: 1rem 2rem;

@@ -80,7 +80,7 @@ const closeImage = () => {
 }
 
 .galeria-subtitle {
-  color: #FF6B00;
+  color: #DC3703;
   font-size: 1.2rem;
   font-weight: 500;
   display: block;

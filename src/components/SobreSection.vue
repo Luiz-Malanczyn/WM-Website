@@ -5,7 +5,11 @@
   <section id="sobre">
     <div class="sobre-container">
       <div class="image-left">
-        <img src="../assets/imagem-sobre-WM.png" alt="Sobre WM" />
+        <div class="image-wrapper">
+          <div class="orange-square top"></div>
+          <div class="orange-square bottom"></div>
+          <img src="../assets/imagem-sobre-WM.png" alt="Sobre WM" />
+        </div>
       </div>
       <div class="content-right">
         <span class="sobre-text">Sobre nós</span>
@@ -14,13 +18,16 @@
           <h2 class="historia">História</h2>
         </div>
         <p class="description">
-          A WM Indústria de Termoplásticos Ltda, atuamos no mercado de prestação de serviços 
-          de injeção de peças técnicas e montagem de sub conjuntos, desde 2012, estamos 
-          localizados em Araucária/PR, com uma área 35.000m², empresa Certificada ISO 9001/2015 
-          dês de 2016.
+          Fundada em 2012, a indústria WM Termoplásticos atua no segmento de prestação 
+          de serviços de injeção de peças técnicas em plástico bem como em pré-montagem 
+          de componentes e conjuntos. Atualmente localizada na Cidade de Araucaria/PR 
+          conta com uma área total de 35.000m². A WM conta com a certificação ISSO 9001 
+          desde do ano de 2016, garantindo nosso comprometimento com a qualidade para 
+          nossos clientes. Para este ano estamos trabalalhando na implementação da ISSO 
+          14001 e IATF.
         </p>
         <div class="certificates">
-          <img src="../assets/certificados.png" alt="Certificados" />
+          <img src="../assets/imagem-certificados.png" alt="Certificados" />
         </div>
       </div>
     </div>
@@ -29,10 +36,12 @@
       <div class="content-left">
         <span class="sobre-text">Sobre nós</span>
         <p class="description">
-          Hoje em fase de implantação IATF e ISO 14001, contamos com 20 injetoras de 800Ton a 80Ton, 
-          nossos principais clientes, Electrolux do Brasil, Gelopar, Wap e Grupo kabel, realizamos 
-          desenvolvimento de produtos, moldes e dispositivos de montagem. Dispomos de Equipe de 
-          Engenharia especializada e todos os recursos necessários para injeção de materiais de Engenharia.
+          A WM Termoplásticos dispõe de um parque fabril com 20 injetoras para plástico 
+          com capacidades de 80 até 800 toneladas de pressão de fechamento. Para 
+          melhorar a eficiência de nosso processo buscamos ao máximo automatizar nossos 
+          processos com a utilização de robôs e esteiras. Outro fator relevante é que 
+          dispomos de uma sala de metrologia com tridimensional e demais equipamentos 
+          para mantermos nosso processo sobre rigoroso controle de qualidade.
         </p>
       </div>
       <div class="images-right">
@@ -60,43 +69,76 @@
 .sobre-container {
   display: flex;
   gap: 4rem;
-  max-width: 1200px;
+  max-width: 80vw;
   margin: 0 auto;
 }
 
 .image-left {
   flex: 1;
+  position: relative;
+  padding-bottom: 5%;
 }
 
-.image-left img {
+.image-wrapper {
+  width: 65%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.image-wrapper img {
   width: 100%;
-  height: auto;
+  height: 100%;
+}
+
+.orange-square {
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  background-color: #DC3703;
+  z-index: -1;
+}
+
+.orange-square.top {
+  left: -12.5%;
+}
+
+.orange-square.bottom {
+  bottom: -9.5%;
+  right: -12.5%;
 }
 
 .content-right {
   flex: 1;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3% 0;
+  height: 100%;
 }
 
 .sobre-text {
-  color: #FF6B00;
+  color: #DC3703;
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .title-container {
   margin: 1rem 0;
+  line-height: 0.9;
 }
 
 .conheca {
   color: #000;
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin: 0;
 }
 
 .historia {
-  color: #FF6B00;
-  font-size: 2.5rem;
+  color: #DC3703;
+  font-size: 3rem;
   margin: 0;
 }
 
@@ -104,6 +146,14 @@
   color: #666;
   line-height: 1.6;
   margin: 1.5rem 0;
+  text-align: justify;
+}
+
+.certificates {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
 }
 
 .certificates img {
@@ -113,7 +163,8 @@
 }
 
 .segundo-sobre {
-  margin-top: 4rem;
+  margin-top: 12rem;
+  padding-bottom: 10%;
 }
 
 .content-left {
@@ -124,12 +175,12 @@
 .images-right {
   flex: 1;
   position: relative;
-  height: 400px;
+  padding: 5%;
 }
 
 .image-top,
 .image-bottom {
-  width: 80%;
+  width: 60%;
   height: auto;
   position: absolute;
   right: 0;
@@ -137,14 +188,13 @@
 
 .image-top {
   top: 0;
-  right: -25%;
+  left: 0%;
   z-index: 2;
 }
 
 .image-bottom {
   bottom: 0;
-  right: 25%;
-  margin-top: 25%;
+  right: 0%;
   z-index: 1;
 }
 
@@ -154,7 +204,6 @@
   min-height: 30vh;
   max-height: fit-content;
   padding: 3rem 0;
-  margin-top: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -163,8 +212,8 @@
 }
 
 .parceiros-title {
-  color: #FF6B00;
-  font-size: 2.5rem;
+  color: #DC3703;
+  font-size: 4.5rem;
   margin-bottom: 2rem;
   text-align: center;
 }
@@ -172,14 +221,14 @@
 .parceiros-container {
   display: flex;
   justify-content: center;
-  gap: 4rem;
-  max-width: 1200px;
+  gap: 12rem;
+  max-width: 40%;
   margin: 0 auto;
 }
 
 .parceiros-container img {
-  height: 80px;
-  width: auto;
+  width: 25%;
+  height: auto;
   object-fit: contain;
 }
 
@@ -202,10 +251,14 @@
   }
 
   .parceiros-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
+    gap: 4rem;
   }
+
+  .parceiros-container img {
+  width: 50%;
+  height: auto;
+  object-fit: contain;
+}
 
   #parceiros {
     height: auto;

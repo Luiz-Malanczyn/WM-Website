@@ -52,7 +52,7 @@ section {
   background-image: url('./assets/imagem-principal-WM.jpg');
   background-size: cover;
   background-position: center;
-  filter: brightness(0.7) grayscale(0.5) blur(2px); /* Aumentado grayscale */
+  filter: brightness(0.7); /* Aumentado grayscale */
   z-index: 1;
 }
 
@@ -63,7 +63,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(128, 128, 128, 0.6); /* Adicionado overlay cinza */
+  background-color: rgba(0, 0, 0, 0.3); /* Adicionado overlay cinza */
   z-index: 1;
 }
 
