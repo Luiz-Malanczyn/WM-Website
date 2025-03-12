@@ -27,24 +27,24 @@ import GalerySection from './components/GalerySection.vue'
 <style>
 .app {
   background-color: white;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 section {
-  min-height: 100vh;
+  min-height: 10vh;
   padding: 2rem;
 }
 
 .hero-container {
   position: relative;
-  min-height: 100vh;
+  min-height: 80vh;
   width: 100%;
   overflow: hidden;
 }
 
 .hero-container::before {
   content: '';
-  position: absolute; /* mudando de fixed para absolute */
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -52,7 +52,7 @@ section {
   background-image: url('./assets/imagem-principal-WM.jpg');
   background-size: cover;
   background-position: center;
-  filter: brightness(0.7); /* Aumentado grayscale */
+  filter: brightness(0.7);
   z-index: 1;
 }
 

@@ -50,7 +50,6 @@ const closeImage = () => {
       </div>
     </div>
 
-    <!-- Image Popup -->
     <div v-if="selectedImage" class="popup-overlay" @click="closeImage">
       <div class="popup-content" @click.stop>
         <img :src="selectedImage.src" :alt="selectedImage.alt" class="popup-image"/>

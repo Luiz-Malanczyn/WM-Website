@@ -3,15 +3,15 @@ import { ref } from 'vue';
 
 const services = [
   {
-    title: 'Peças automotivas',
+    title: 'Linha automotiva',
     image: '/src/assets/imagem-pecas-automotivas.png'
   },
   {
-    title: 'Caminhões',
+    title: 'Automotiva pesada',
     image: '/src/assets/imagem-caminhao.png'
   },
   {
-    title: 'Tratores',
+    title: 'Agricola',
     image: '/src/assets/imagem-trator.png'
   },
   {
@@ -29,6 +29,23 @@ const showPopup = ref(false);
 const togglePopup = () => {
   showPopup.value = !showPopup.value;
 };
+
+const machines = [
+  { quantity: 1, name: 'Injetora para Termoplástico marca ROMI – Modelo Primax 800R com capacidade de fechamento – 800 Ton. – Capacidade de injeção – 2.983 gr. Distância entre colunas – 920 x 920 x 1000 mm com robô', tonnage: '800', year: '2021' },
+  { quantity: 2, name: 'Injetora para Termoplástico marca PAVAN ZANETTI – Modelo HFX 650 com capacidade de fechamento – 650 Ton – Capacidade de injeção – 2.895 gr. Distância entre colunas – 895 x 895 x 1080 mm com robô', tonnage: '650', year: '2021' },
+  { quantity: 1, name: 'Injetora para Termoplástico marca PAVAN ZANETTI – Modelo HFX 568 com capacidade de fechamento – 600 Ton – Capacidade de injeção – 2.575 gr. Distância entre colunas – 835 x 835 x 880 mm com robô', tonnage: '600', year: '2021' },
+  { quantity: 2, name: 'Injetora para Termoplástico marca ROMI – Modelo Primax 450R com capacidade de fechamento – 450 Ton – Capacidade de injeção – 1.440 gr/1972g Distância entre colunas – 800 x 880 x 880 mm com robô', tonnage: '450', year: '2021' },
+  { quantity: 1, name: 'Injetora para Termoplástico marca ROMI – Modelo Primax 450R com capacidade de fechamento – 450 Ton – Capacidade de injeção – 1.440 gr/1972g Distância entre colunas – 800 x 880 x 880 mm com robô', tonnage: '450', year: '2020' },
+  { quantity: 1, name: 'Injetora para Termoplástico marca ROMI – Modelo Primax 450R com capacidade de fechamento – 450 Ton – Capacidade de injeção – 1.440 gr/1972g Distância entre colunas – 780 x 780 x 820 mm com robô', tonnage: '450', year: '2020' },
+  { quantity: 1, name: 'Injetora para Termoplástico marca ROMI – Modelo Primax 300R com capacidade de fechamento – 300 Ton. – Capacidade de injeção – 1.245 gr/1.325g Distância entre colunas – 650 x 650 x 820 mm', tonnage: '300', year: '2016' },
+  { quantity: 1, name: 'Injetora para Termoplástico marca ROMI – Modelo Primax 300R com capacidade de fechamento – 300 Ton. – Capacidade de injeção – 1.245 gr/1.325g Distância entre colunas – 650 x 650 x 820 mm', tonnage: '300', year: '2022' },
+  { quantity: 1, name: 'Injetora para Termoplástico marca ROMI – Modelo Primax 200R com capacidade de fechamento – 200 Ton. – Capacidade de injeção – 992 gr/1.042g Distância entre colunas – 501 x 501 x 760 mm', tonnage: '200', year: '2020' },
+  { quantity: 1, name: 'Injetora para Termoplástico marca ROMI – Modelo PRÁTICA 170 com Capacidade de fechamento – 170 Ton. – Capacidade de injeção 585 cm3 / 622 cm3 Distância entre colunas – 470 x 470 x 640 mm', tonnage: '170', year: '2013' },
+  { quantity: 1, name: 'Injetora para Termoplástico marca BATENFELD – Modelo TM 150 com capacidade de fechamento – 150 Ton. – Capacidade de injeção – 304 gr/389g Distância entre colunas – 500 x 500 x 450 mm', tonnage: '150', year: '2020' },
+  { quantity: 2, name: 'Injetoras para Termoplástico marca ROMI – Modelo PRÁTICA 130 com capacidade de fechamento – 130 Ton. – Capacidade de injeção 402 cm3 / 487 cm3 Distância entre colunas – 420 x 420 x 460 mm', tonnage: '130', year: '2013' },
+  { quantity: 1, name: 'Injetora para Termoplástico marca YIZUMI – Modelo UN400A5 com capacidade de fechamento – 400 Ton. – Capacidade de injeção – 986 gr Distância entre colunas – 710 x 670 mm', tonnage: '400', year: '2022' },
+  { quantity: 1, name: 'Injetora para Termoplástico marca ROMI – Modelo PRÁTICA 80 com capacidade de fechamento – 80 Ton. – Capacidade de injeção 212 cm3 / 226 cm3 Distância entre colunas – 360 x 360 x 360 mm', tonnage: '80', year: '2008' },
+];
 </script>
 
 <template>
@@ -37,7 +54,15 @@ const togglePopup = () => {
       <span class="segmentos-text">Nossos Segmentos</span>
       <h2 class="conheca-title">Conheça todas nossas Soluções</h2>
       <p class="description">
-        Dispomos de máquinas injetoras de variadas capacidades (800Ton a 80Ton), podendo processar peças plásticas com até 3.000 gramas por ciclo, além de possuirmos equipe de Engenheira especializada e recursos para trabalharmos com os mais variados tipos de injeção e materiais básicos aos de plásticos de engenharia, os mais processados são: PP homopolímero e copolímero, PEAD, PEBD, SAN, ABS, PC, PA (nylon) 6 e 6.6, POM (poliacetal), PS e TPV
+        A WM Termoplásticos tem a capacidade de processar peças plásticas com até 
+        3,0kg total por ciclo de injeção nos mais variados tipos de polímeros tanto 
+        comerciais como de engenharia usando o exemplo dos utilizados por nós 
+        atualmente como PP Homo e Copo, PEAD e PEBD, TPV, PS, ABS, SAN, PC, 
+        POM, PA 6 e 6.6. <br> <br>
+        Nossa empresa possui equipe altamente qualificada em Engenharia, Processo e 
+        Qualidade o que nos possibilita além de prestar serviços de injeção, também 
+        desenvolver dispositivos e moldes para atender as necessidades de nossos 
+        clientes de uma forma completa.
       </p>
 
       <div class="cards-container">
@@ -65,11 +90,11 @@ const togglePopup = () => {
               </tr>
             </thead>
             <tbody>
-              <tr v-for="i in 14" :key="i">
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+              <tr v-for="machine in machines" :key="machine.name">
+                <td>{{ machine.quantity }}</td>
+                <td>{{ machine.name }}</td>
+                <td>{{ machine.tonnage }}</td>
+                <td>{{ machine.year }}</td>
               </tr>
             </tbody>
           </table>
@@ -87,7 +112,7 @@ const togglePopup = () => {
 }
 
 .servicos-container {
-  max-width: 1200px;
+  max-width: 80vw;
   margin: 0 auto;
   text-align: center;
 }
@@ -181,7 +206,7 @@ const togglePopup = () => {
   padding: 2rem;
   border-radius: 8px;
   position: relative;
-  max-width: 800px;
+  max-width: 55vw;
   width: 90%;
   max-height: 80vh;
   overflow-y: auto;
@@ -208,6 +233,11 @@ th, td {
   border: 1px solid #ddd;
   padding: 0.8rem;
   text-align: left;
+}
+
+/* Add this to make the name column justified */
+td:nth-child(2) {
+  text-align: center;
 }
 
 th {
