@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import NavBar from './components/NavBar.vue'
-import HomeSection from './components/HomeSection.vue'
-import SobreSection from './components/SobreSection.vue'
-import ServicosSection from './components/ServicosSection.vue'
-import ClientesSection from './components/ClientesSection.vue'
-import ContatoSection from './components/ContatoSection.vue'
-import GalerySection from './components/GalerySection.vue'
+import NavBar from './components/NavBar/NavBar.vue'
+import HomeSection from './components/HomeSection/HomeSection.vue'
+import SobreSection from './components/SobreSection/SobreSection.vue'
+import ServicosSection from './components/ServicosSection/ServicosSection.vue'
+import ClientesSection from './components/ClientesSection/ClientesSection.vue'
+import ContatoSection from './components/ContatoSection/ContatoSection.vue'
+import GalerySection from './components/GalerySection/GalerySection.vue'
 </script>
 
 <template>

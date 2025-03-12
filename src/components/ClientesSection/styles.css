@@ -1,0 +1,40 @@
+#clientes {
+  padding: 4rem 2rem;
+  background-color: #f5f5f5;
+}
+
+.clientes-container {
+  max-width: 80vw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.clientes-title {
+  color: #DC3703;
+  font-size: 4.5rem;
+  margin-bottom: 3rem;
+}
+
+.logos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.client-logo {
+  max-width: 20vw;
+  width: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .logos-container {
+    gap: 2rem;
+  }
+
+  .client-logo {
+    height: 40px;
+  }
+}
