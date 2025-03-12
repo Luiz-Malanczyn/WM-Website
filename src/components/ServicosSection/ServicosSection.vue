@@ -33,8 +33,8 @@ const { showPopup, togglePopup } = useServicosSection()
         Relação de equipamentos
       </button>
 
-      <div class="popup-overlay" v-if="showPopup" @click="togglePopup">
-        <div class="popup-content" @click.stop>
+      <div class="servico-popup-overlay" v-if="showPopup" @click="togglePopup">
+        <div class="servico-popup-content" @click.stop>
           <h2>Relação de Máquinas</h2>
           <table>
             <thead>

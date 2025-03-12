@@ -96,14 +96,17 @@
   
   .popup-content {
     position: relative;
-    max-width: 90vw;
+    background: transparent;
     max-height: 90vh;
+    overflow: hidden;
   }
   
   .popup-image {
-    max-width: 100%;
+    max-width: 90vw;
     max-height: 90vh;
     object-fit: contain;
+    display: block;
+    background: transparent;
   }
   
   .popup-close {
