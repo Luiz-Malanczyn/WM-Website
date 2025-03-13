@@ -1,7 +1,13 @@
+import imagemElectrolux from '../../../assets/imagem-electrolux.png'
+import imagemTardeli from '../../../assets/imagem-tardeli.png'
+import imagemGelopar from '../../../assets/imagem-gelopar.png'
+import imagemWap from '../../../assets/imagem-wap.png'
+import imagemKabel from '../../../assets/imagem-kabel.png'
+
 export const clients = [
-  { name: 'Electrolux', image: 'src/assets/imagem-electrolux.png' },
-  { name: 'Tardeli', image: 'src/assets/imagem-tardeli.png' },
-  { name: 'Gelopar', image: 'src/assets/imagem-gelopar.png' },
-  { name: 'WAP', image: 'src/assets/imagem-wap.png' },
-  { name: 'Kabel', image: 'src/assets/imagem-kabel.png' },
+  { name: 'Electrolux', image: imagemElectrolux },
+  { name: 'Tardeli', image: imagemTardeli },
+  { name: 'Gelopar', image: imagemGelopar },
+  { name: 'WAP', image: imagemWap },
+  { name: 'Kabel', image: imagemKabel },
 ]

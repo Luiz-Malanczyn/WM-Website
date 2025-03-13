@@ -1,4 +1,9 @@
 import { ref } from 'vue'
+import imagemPecasAutomotivas from '../../../assets/imagem-pecas-automotivas.png'
+import imagemCaminhao from '../../../assets/imagem-caminhao.png'
+import imagemTrator from '../../../assets/imagem-trator.png'
+import imagemEletrodomesticosLinhaBranca from '../../../assets/imagem-eletrodomesticos-linha-branca.png'
+import imagemEletrodomesticosPortateis from '../../../assets/imagem-eletrodomesticos-portateis.png'
 
 export const useServicosSection = () => {
   const showPopup = ref(false)
@@ -14,11 +19,11 @@ export const useServicosSection = () => {
 }
 
 export const services = [
-  { title: 'Linha automotiva', image: '/src/assets/imagem-pecas-automotivas.png' },
-  { title: 'Automotiva pesada', image: '/src/assets/imagem-caminhao.png' },
-  { title: 'Agricola', image: '/src/assets/imagem-trator.png' },
-  { title: 'Eletrodomésticos Linha Branca', image: '/src/assets/imagem-eletrodomesticos-linha-branca.png' },
-  { title: 'Eletrodomésticos Portáteis', image: '/src/assets/imagem-eletrodomesticos-portateis.png' }
+  { title: 'Linha automotiva', image: imagemPecasAutomotivas },
+  { title: 'Automotiva pesada', image: imagemCaminhao },
+  { title: 'Agricola', image: imagemTrator },
+  { title: 'Eletrodomésticos Linha Branca', image: imagemEletrodomesticosLinhaBranca },
+  { title: 'Eletrodomésticos Portáteis', image: imagemEletrodomesticosPortateis }
 ]
 
 export const machines = [
