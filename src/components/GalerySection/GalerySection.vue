@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { useGalerySection, galleryItem } from './composables/useGalerySection'
+import { useGalerySection } from './composables/useGalerySection'
 import './styles.css'
 
 const {
-  galleryImages: images, // ainda exposto com esse nome no return
+  galleryImages: images,
   selectedIndex,
   currentImage,
   openImage,
