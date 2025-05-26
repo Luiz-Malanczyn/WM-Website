@@ -11,15 +11,15 @@ const { showPopup, togglePopup } = useServicosSection()
       <span class="segmentos-text">Nossos Segmentos</span>
       <h2 class="conheca-title">Conheça todas nossas soluções</h2>
       <p class="description">
-        A WM Termoplásticos tem a capacidade de processar peças plásticas com até 
-        3,0kg total por ciclo de injeção nos mais variados tipos de polímeros tanto 
-        comerciais como de engenharia usando o exemplo dos utilizados por nós 
-        atualmente como PP Homo e Copo, PEAD e PEBD, TPV, PS, ABS, SAN, PC, 
-        POM, PA 6 e 6.6. <br> <br>
-        Nossa empresa possui equipe altamente qualificada em Engenharia, Processo e 
-        Qualidade o que nos possibilita além de prestar serviços de injeção, também 
-        desenvolver dispositivos e moldes para atender as necessidades de nossos 
-        clientes de uma forma completa.
+        A WM Termoplásticos tem capacidade para processar peças plásticas de até 3,0 kg 
+        por ciclo de injeção, trabalhando com uma ampla variedade de polímeros, tanto 
+        comerciais quanto de engenharia.
+        Entre os materiais atualmente utilizados, destacam-se: PP Homo e Copo, PEAD, 
+        PEBD, TPV, PS, ABS, SAN, PC, POM, PA 6 e PA 6.6. <br> <br>
+        Contamos com uma equipe altamente qualificada nas áreas de Engenharia, Processos 
+        e Qualidade, o que nos permite ir além da injeção de peças: desenvolvemos também 
+        dispositivos e moldes sob medida, oferecendo soluções completas e personalizadas para as 
+        necessidades de cada cliente.
       </p>
 
       <div class="cards-container">

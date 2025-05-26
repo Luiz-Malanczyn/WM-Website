@@ -21,7 +21,7 @@ const { historiaText, capacidadeText } = useSobreSection()
           <h2 class="conheca">Conheça Nossa</h2>
           <h2 class="historia">História</h2>
         </div>
-        <p class="description">{{ historiaText }}</p>
+        <p class="description" v-html="historiaText"></p>
         <div class="certificates">
           <img src="../../assets/imagem-certificados.png" alt="Certificados" />
         </div>

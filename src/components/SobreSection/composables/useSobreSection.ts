@@ -1,20 +1,23 @@
 import { ref } from 'vue'
 
 export const useSobreSection = () => {
-  const historiaText = ref(`Fundada em 2012, a indústria WM Termoplásticos atua no segmento de prestação 
-    de serviços de injeção de peças técnicas em plástico bem como em pré-montagem 
-    de componentes e conjuntos. Atualmente localizada na Cidade de Araucaria/PR 
-    conta com uma área total de 35.000m². A WM conta com a certificação ISSO 9001 
-    desde do ano de 2016, garantindo nosso comprometimento com a qualidade para 
-    nossos clientes. Para este ano estamos trabalalhando na implementação da ISSO 
-    14001 e IATF.`)
+  const historiaText = ref(`Fundada em 2012, a WM Termoplásticos é uma empresa especializada na prestação de serviços
+  de injeção de peças técnicas em plástico, atuando também na pré-montagem de componentes e conjuntos, sempre com
+  foco em eficiência, qualidade e inovação.<br>
+  Localizada estrategicamente na cidade de Araucária/PR, a empresa dispõe de uma ampla estrutura com 35.000 m² de
+  área total, preparada para atender às mais diversas demandas do mercado.<br>
+  Desde 2016, a WM Termoplásticos é certificada pela ISO 9001, reafirmando seu compromisso com a qualidade, a
+  melhoria contínua e a satisfação dos clientes. Atualmente, a empresa está em fase de implementação das certificações
+  ISO 14001 e IATF 16949, ampliando seu foco em sustentabilidade ambiental e conformidade com os rigorosos padrões do
+  setor automotivo.<br>
+  Na WM, cada projeto é conduzido com responsabilidade, precisão e parceria, buscando sempre entregar soluções
+  completas e personalizadas, com alto valor agregado.`)
 
-  const capacidadeText = ref(`A WM Termoplásticos dispõe de um parque fabril com 20 injetoras para plástico 
-    com capacidades de 80 até 800 toneladas de pressão de fechamento. Para 
-    melhorar a eficiência de nosso processo buscamos ao máximo automatizar nossos 
-    processos com a utilização de robôs e esteiras. Outro fator relevante é que 
-    dispomos de uma sala de metrologia com tridimensional e demais equipamentos 
-    para mantermos nosso processo sobre rigoroso controle de qualidade.`)
+  const capacidadeText = ref(`A WM Termoplásticos conta com um parque fabril composto por 20 injetoras de plástico, 
+    com capacidades que variam de 80 a 800 toneladas de força de fechamento. Com o objetivo de aumentar a eficiência 
+    produtiva, investimos continuamente na automatização de nossos processos, por meio da integração de robôs e esteiras 
+    transportadoras. Além disso, dispomos de uma sala de metrologia equipada com máquina de medição tridimensional e outros 
+    instrumentos de precisão, o que nos permite manter um rigoroso controle de qualidade em todas as etapas do processo.`)
 
   return {
     historiaText,
