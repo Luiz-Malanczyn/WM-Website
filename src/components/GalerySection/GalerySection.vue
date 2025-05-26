@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useGalerySection, galleryItems } from './composables/useGalerySection'
+import { useGalerySection, galleryItem } from './composables/useGalerySection'
 import './styles.css'
 
 const {
