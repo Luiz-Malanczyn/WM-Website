@@ -2,7 +2,7 @@
 import { useHomeSection } from './composables/useHomeSection'
 import './styles.css'
 
-const { title, description } = useHomeSection()
+const { title, description, description2 } = useHomeSection()
 </script>
 
 <template>
@@ -11,7 +11,9 @@ const { title, description } = useHomeSection()
       <div class="title-container">
         <h1 v-html="title.replace('\n', '<br>')"></h1>
       </div>
-      <p>{{ description }}</p>
+      <p>{{ description }}</p><br>
+      <h2>Política de qualidade</h2>
+      <p>{{ description2 }}</p>
     </div>
   </section>
 </template>
