@@ -49,7 +49,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('./assets/imagem-galeria-3.png');
+  background-image: url('./assets/imagem-galeria-7.png');
   background-size: cover;
   background-position: center;
   filter: brightness(0.7);
