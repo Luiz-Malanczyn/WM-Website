@@ -1,8 +1,47 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import { useSobreSection } from './composables/useSobreSection'
 import './styles.css'
 
+import certificado9001 from '../../assets/WM INDÚSTRIA 9001.pdf'
+import certificadoIQNET from '../../assets/WM INDÚSTRIA IQNET.pdf'
+
 const { historiaText, capacidadeText } = useSobreSection()
+
+const isPopupVisible = ref(false)
+const isPreviewVisible = ref(false)
+const activeTabIndex = ref(0) // <-- ADICIONE ESTA LINHA
+
+const pdfs = [
+  { 
+    name: 'Certificado ISO 9001',
+    path: certificado9001,
+    details: {
+      'Norma': 'ISO 9001:2015 ',
+      'Emissão': '28/07/2017 ',
+      'Validade': '27/07/2026 ',
+      'Escopo': 'Fabricação, industrialização e montagem de peças plásticas técnicas injetadas. '
+    }
+  },
+  { 
+    name: 'Certificado IQNET',
+    path: certificadoIQNET,
+    details: {
+      'Reconhecimento': 'IQNET - Quality Management System ',
+      'Emissão': '28/07/2017 ',
+      'Validade': '27/07/2026 ',
+      'Escopo': 'Manufacture, industrialization and assembly of technical injected plastic parts. '
+    }
+  }
+]
+
+const openPopup = () => {
+  isPopupVisible.value = true
+}
+
+const closePopup = () => {
+  isPopupVisible.value = false
+}
 </script>
 
 <template>
@@ -22,10 +61,25 @@ const { historiaText, capacidadeText } = useSobreSection()
           <h2 class="historia">História</h2>
         </div>
         <p class="description" v-html="historiaText"></p>
-        <div class="certificates">
-          <img src="../../assets/imagem-certificados.png" alt="Certificados" />
+        
+        <div 
+          class="certificates"
+          @mouseover="isPreviewVisible = true"
+          @mouseleave="isPreviewVisible = false"
+        >
+          <img 
+            src="../../assets/imagem-certificados.png" 
+            alt="Certificados" 
+            @click="openPopup"
+            style="cursor: pointer;"
+          />
+          <div v-if="isPreviewVisible" class="preview-container">
+            <div v-for="pdf in pdfs" :key="pdf.name" class="preview-item">
+              &#x1F4CE; {{ pdf.name }}
+            </div>
+          </div>
         </div>
-      </div>
+        </div>
     </div>
     
     <div class="sobre-container segundo-sobre">
@@ -48,4 +102,30 @@ const { historiaText, capacidadeText } = useSobreSection()
       <img src="../../assets/imagem-parceiros-WM-Treinamentos.png" alt="WM Treinamentos" />
     </div>
   </section>
-</template>
+
+  <teleport to="body">
+    <div v-if="isPopupVisible" class="popup-overlay" @click.self="closePopup">
+      <div class="popup-content">
+        <button @click="closePopup" class="close-button">&times;</button>
+        <h2>Nossos Certificados</h2>
+
+        <div class="tabs-container">
+          <button
+            v-for="(pdf, index) in pdfs"
+            :key="pdf.name"
+            :class="['tab-button', { active: activeTabIndex === index }]"
+            @click="activeTabIndex = index"
+          >
+            {{ pdf.name }}
+          </button>
+        </div>
+
+        <div class="pdf-content-area">
+          <div class="pdf-viewer-wrapper">
+            <iframe :src="pdfs[activeTabIndex].path" class="pdf-viewer" title="Visualizador de PDF"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </teleport>
+  </template>

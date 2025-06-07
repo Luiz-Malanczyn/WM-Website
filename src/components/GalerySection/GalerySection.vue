@@ -51,7 +51,7 @@ const {
             <img :src="currentImage.src" :alt="currentImage.alt" class="popup-image" />
           </template>
           <template v-else>
-            <video :src="currentImage.src" class="popup-image" controls autoplay loop></video>
+            <video :src="currentImage.src" class="popup-image" controls autoplay loop muted></video>
           </template>
 
           <button @click.stop="prevImage" class="arrow left">‹</button>
