@@ -13,15 +13,23 @@ import './styles.css'
 
       <div class="contact-box">
         <h3>{{ contactInfo.comercial.titulo }}</h3>
-        <p v-for="(telefone, index) in contactInfo.comercial.telefones" 
-           :key="index">Telefone: {{ telefone }}</p>
+        <p v-for="(telefone, index) in contactInfo.comercial.telefones" :key="'tel-' + index">
+          Telefone: {{ telefone }}
+        </p>
+        <p v-for="(celular, index) in contactInfo.comercial.celulares" :key="'cel-' + index">
+          Celular: {{ celular }}
+        </p>
         <p>Email: {{ contactInfo.comercial.email }}</p>
       </div>
 
       <div class="contact-box">
         <h3>{{ contactInfo.financeiro.titulo }}</h3>
-        <p v-for="(telefone, index) in contactInfo.financeiro.telefones" 
-           :key="index">Telefone: {{ telefone }}</p>
+        <p v-for="(telefone, index) in contactInfo.financeiro.telefones" :key="'tel-fin-' + index">
+          Telefone: {{ telefone }}
+        </p>
+        <p v-for="(celular, index) in contactInfo.financeiro.celulares" :key="'cel-fin-' + index">
+          Celular: {{ celular }}
+        </p>
         <p>Email: {{ contactInfo.financeiro.email }}</p>
       </div>
     </div>
