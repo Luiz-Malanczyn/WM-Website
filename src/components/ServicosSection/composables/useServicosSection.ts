@@ -40,5 +40,10 @@ export const machines = [
   { quantity: 1, name: 'Injetora para Termoplástico marca BATENFELD – Modelo TM 150 com capacidade de fechamento – 150 Ton. – Capacidade de injeção – 304 gr/389g Distância entre colunas – 500 x 500 x 450 mm', tonnage: '150', year: '2020' },
   { quantity: 2, name: 'Injetoras para Termoplástico marca ROMI – Modelo PRÁTICA 130 com capacidade de fechamento – 130 Ton. – Capacidade de injeção 402 cm3 / 487 cm3 Distância entre colunas – 420 x 420 x 460 mm', tonnage: '130', year: '2013' },
   { quantity: 1, name: 'Injetora para Termoplástico marca YIZUMI – Modelo UN400A5 com capacidade de fechamento – 400 Ton. – Capacidade de injeção – 986 gr Distância entre colunas – 710 x 670 mm', tonnage: '400', year: '2022' },
+  { quantity: 1, name: 'Injetora para Termoplástico marca YIZUMI', tonnage: '320', year: '2024' },
+  { quantity: 1, name: 'Injetora para Termoplástico marca YIZUMI', tonnage: '260', year: '2024' },
+  { quantity: 1, name: 'Injetora para Termoplástico marca YIZUMI', tonnage: '320', year: '2024' },
+  { quantity: 1, name: 'Injetora para Termoplástico marca YIZUMI', tonnage: '530', year: '2024' },
+  { quantity: 1, name: 'Injetora para Termoplástico marca YIZUMI UN400 AS', tonnage: '400', year: '2023' },
   { quantity: 1, name: 'Injetora para Termoplástico marca ROMI – Modelo PRÁTICA 80 com capacidade de fechamento – 80 Ton. – Capacidade de injeção 212 cm3 / 226 cm3 Distância entre colunas – 360 x 360 x 360 mm', tonnage: '80', year: '2008' },
 ]
