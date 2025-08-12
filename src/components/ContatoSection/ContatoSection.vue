@@ -32,6 +32,15 @@ import './styles.css'
         </p>
         <p>Email: {{ contactInfo.financeiro.email }}</p>
       </div>
+
+      <div class="contact-box">
+        <h3>{{ contactInfo.recursosHumanos.titulo }}</h3>
+        <p v-for="(celular, index) in contactInfo.recursosHumanos.celulares" :key="'cel-fin-' + index">
+          Celular: {{ celular }}
+        </p>
+        <p>Email: {{ contactInfo.recursosHumanos.email }}</p>
+        <p>{{ contactInfo.recursosHumanos.descricao }}</p>
+      </div>
     </div>
   </section>
 </template>

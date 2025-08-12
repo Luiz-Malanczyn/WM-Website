@@ -10,9 +10,15 @@ export const contactInfo = {
     email: 'wagner@wmtermoplasticos.com.br'
   },
   financeiro: {
-    titulo: 'Contato Financeiro/RH',
+    titulo: 'Contato ADM/Financeiro',
     telefones: ['(41) 3069-0003', '(41) 3069-0005'],
     celulares: ['(41) 9971-1278'],
     email: 'fabiana@wmtermoplasticos.com.br'
+  },
+  recursosHumanos: {
+    titulo: 'Contato RH',
+    celulares: ['(41) 99579-0308'],
+    email: 'rh@wmtermoplasticos.com.br',
+    descricao: 'Venha fazer parte do nosso time!'
   }
 }
