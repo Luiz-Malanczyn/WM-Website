@@ -88,8 +88,8 @@ const closePopup = () => {
         <p class="description">{{ capacidadeText }}</p>
       </div>
       <div class="images-right">
-        <img src="../../assets/imagem-sobre-WM-2.png" alt="Sobre WM 2" class="image-top" />
-        <img src="../../assets/imagem-sobre-WM-3.png" alt="Sobre WM 3" class="image-bottom" />
+        <img src="../../assets/imagem-sobre-WM-3.png" alt="Sobre WM 2" class="image-top" />
+        <img src="../../assets/imagem-sobre-WM-2.png" alt="Sobre WM 3" class="image-bottom" />
       </div>
     </div>
   </section>
