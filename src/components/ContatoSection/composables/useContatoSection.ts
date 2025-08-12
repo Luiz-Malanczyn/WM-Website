@@ -6,13 +6,13 @@ export const contactInfo = {
   comercial: {
     titulo: 'Contato Comercial',
     telefones: ['(41) 3069-0003', '(41) 3069-0005'],
-    celulares: ['(41) 9971-0724'],
+    celulares: ['(41) 99971-0724'],
     email: 'wagner@wmtermoplasticos.com.br'
   },
   financeiro: {
     titulo: 'Contato ADM/Financeiro',
     telefones: ['(41) 3069-0003', '(41) 3069-0005'],
-    celulares: ['(41) 9971-1278'],
+    celulares: ['(41) 99971-1278'],
     email: 'fabiana@wmtermoplasticos.com.br'
   },
   recursosHumanos: {
