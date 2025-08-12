@@ -3,8 +3,8 @@ import { ref } from 'vue'
 import { useSobreSection } from './composables/useSobreSection'
 import './styles.css'
 
-import certificado9001 from '../../assets/WM INDÚSTRIA 9001.pdf'
-import certificadoIQNET from '../../assets/WM INDÚSTRIA IQNET.pdf'
+import certificado9001 from '../../assets/WM INDUSTRIA 9001.pdf'
+import certificadoIQNET from '../../assets/WM INDUSTRIA IQNET.pdf'
 
 const { historiaText, capacidadeText } = useSobreSection()
 
