@@ -1,6 +1,6 @@
 export const contactInfo = {
   empresa: {
-    titulo: 'WM Térmoplasticos',
+    titulo: 'WM Termoplásticos',
     descricao: 'A WM Indústria de Termoplásticos Ltda, atuamos no mercado de prestação de serviços de injeção de peças técnicas e montagem de sub conjuntos'
   },
   comercial: {
