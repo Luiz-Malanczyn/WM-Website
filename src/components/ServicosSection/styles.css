@@ -143,17 +143,45 @@ tr:nth-child(even) {
 @media (max-width: 768px) {
   .cards-container {
     gap: 1rem;
+    flex-wrap: wrap;
   }
 
   .card {
-    width: calc(50% - 1rem);
-  }
-
-  .servico-popup-content {
-    width: 95%;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    word-break: break-word;
     padding: 1rem;
   }
 
+  .card h3 {
+    font-size: 1rem;
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  .servico-popup-content {
+    width: 95vw;
+    height: 90vh;
+    max-width: 95vw;
+    max-height: 90vh;
+    padding: 0.5rem;
+    border-radius: 8px;
+    top: 5vh;
+    left: 2.5vw;
+    right: 2.5vw;
+    bottom: auto;
+    position: fixed;
+    z-index: 2000;
+  }
+
+  .close-button {
+    z-index: 2100;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+  
   table {
     font-size: 0.9rem;
   }

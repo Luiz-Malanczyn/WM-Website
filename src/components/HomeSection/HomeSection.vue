@@ -20,6 +20,9 @@ const { title, description, iso9001Logo, iso14001Logo, iatfLogo } = useHomeSecti
       <div class="title-container">
         <h1 v-html="title.replace('\n', '<br>')"></h1>
       </div>
+      <p class="intro-text">
+        Injeção em peças plásticas técnicas, montagem de subconjunto, tampografia, hot-stamping, embalagem e toda a logística de entrega.
+      </p>
       <h2>Política de qualidade</h2>
       <p>{{ description }}</p>
     </div>

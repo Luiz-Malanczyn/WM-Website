@@ -27,3 +27,15 @@ p {
   margin-bottom: 0.5rem;
   line-height: 1.5;
 }
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+  .contact-box {
+    width: 100%;
+  }
+}

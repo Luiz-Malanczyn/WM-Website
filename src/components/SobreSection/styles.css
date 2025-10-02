@@ -300,15 +300,26 @@
   }
 
   .images-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: auto;
+    width: 100%;
+    padding: 0;
   }
 
   .image-top,
   .image-bottom {
-    position: relative;
-    width: 100%;
-    margin-top: 1rem;
+    position: static;
+    width: 70%;
+    max-width: 300px;
+    margin: 0.5rem auto;
+    display: block;
     right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transform: none;
   }
 
   .parceiros-container {

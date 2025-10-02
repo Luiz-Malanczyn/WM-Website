@@ -59,3 +59,21 @@
   background-color: #DC3703;
   z-index: -1;
 }
+
+@media (max-width: 768px) {
+  .menu a {
+    font-size: 3vw;
+    padding: 1vh 2vw;
+    white-space: nowrap;
+  }
+
+  .logo {
+    width: 20% !important;
+    transition: none !important;
+  }
+
+  .scrolled .logo {
+    width: 20% !important;
+    transition: none !important;
+  }
+}
