@@ -21,7 +21,7 @@
 .home-logos-container {
   position: absolute;
   left: 0;
-  top: 4vh;
+  top: 15vh;
   display: flex;
   flex-direction: column;
   gap: 10px;
