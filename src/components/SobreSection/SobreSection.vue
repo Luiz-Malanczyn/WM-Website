@@ -4,13 +4,15 @@ import { useSobreSection } from './composables/useSobreSection'
 import './styles.css'
 
 import certificado9001 from '../../assets/WM INDUSTRIA 9001.pdf'
-import certificadoIQNET from '../../assets/WM INDUSTRIA IQNET.pdf'
+import certificado9001IQNET from '../../assets/WM INDUSTRIA 9001 IQNET.pdf'
+import certificado14001 from '../../assets/ISO 14001.pdf'
+import certificado14001IOQNET from '../../assets/ISO 14001 IQNET.pdf'
 
 const { historiaText, capacidadeText } = useSobreSection()
 
 const isPopupVisible = ref(false)
 const isPreviewVisible = ref(false)
-const activeTabIndex = ref(0) // <-- ADICIONE ESTA LINHA
+const activeTabIndex = ref(0)
 
 const pdfs = [
   { 
@@ -24,13 +26,33 @@ const pdfs = [
     }
   },
   { 
-    name: 'Certificado IQNET',
-    path: certificadoIQNET,
+    name: 'Certificado ISO 9001 IQNET',
+    path: certificado9001IQNET,
     details: {
       'Reconhecimento': 'IQNET - Quality Management System ',
       'Emissão': '28/07/2017 ',
       'Validade': '27/07/2026 ',
       'Escopo': 'Manufacture, industrialization and assembly of technical injected plastic parts. '
+    }
+  },
+  { 
+    name: 'Certificado ISO 14001',
+    path: certificado14001,
+    details: {
+      'Reconhecimento': 'IQNET - Quality Management System ',
+      'Emissão': '18/12/2025 ',
+      'Validade': '17/12/2028 ',
+      'Escopo': 'FABRICAÇÃO, INDUSTRIALIZAÇÃO E MONTAGEM DE PEÇAS PLÁSTICAS TÉCNICAS INJETADAS.'
+    }
+  },
+  { 
+    name: 'Certificado ISO 14001 IQNET',
+    path: certificado14001IOQNET,
+    details: {
+      'Reconhecimento': 'IQNET - Quality Management System ',
+      'Emissão': '18/12/2025 ',
+      'Validade': '17/12/2028 ',
+      'Escopo': 'MANUFACTURING, INDUSTRIALIZATION AND ASSEMBLY OF INJECTION-MOLDED TECHNICAL PLASTIC PARTS. '
     }
   }
 ]
