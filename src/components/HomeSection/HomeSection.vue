@@ -2,11 +2,14 @@
 import { useHomeSection } from './composables/useHomeSection'
 import './styles.css'
 
-const { title, description, iso9001Logo, iso14001Logo, iatfLogo } = useHomeSection()
+const { title, description, iso9001Logo, iso14001Logo, iatfLogo, vacationNotice } = useHomeSection()
 </script>
 
 <template>
   <section id="home" class="home-section">
+    <div class="vacation-banner">
+      {{ vacationNotice }}
+    </div>
     <div class="home-content">
       <div class="home-logos-container">
         <img :src="iso9001Logo" alt="ISO 9001" class="iso-logo top-logo">
