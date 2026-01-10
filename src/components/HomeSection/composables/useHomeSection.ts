@@ -7,7 +7,6 @@ import iatfLogo from '../../../assets/IATF_logo.png'
 export const useHomeSection = () => {
   const title = ref('Bem-vindo à \nWM Termoplásticos')
   const description = ref('A WM Termoplásticos busca através de pessoas comprometidas, a melhoria de seus processos, a satisfação dos seus clientes, a prevenção da poluição e o atendimento aos requisitos legais.')
-  const vacationNotice = ref('Parada produtiva de férias coletivas entre 22/12 e 02/01/2026. Retorno 05/01/2026')
 
   return {
     title,
@@ -15,6 +14,5 @@ export const useHomeSection = () => {
     iso9001Logo,
     iso14001Logo,
     iatfLogo,
-    vacationNotice
   }
 }

@@ -75,22 +75,6 @@
   display: block;
 }
 
-.vacation-banner {
-  width: 100%;
-  text-align: center;
-  background: #d62828;
-  color: white;
-  padding: 0.8vh 1vw;
-  font-weight: 500;
-  font-size: 1.5vh;
-  letter-spacing: 0.4px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 2000;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
-}
-
 
 @media (max-width: 768px) {
   .home-section {
@@ -144,9 +128,5 @@
   .home-section .intro-text {
     font-size: 2.5vw;
     max-width: 100vw;
-  }
-
-  .vacation-banner {
-    font-size: 2vw;
   }
 }
