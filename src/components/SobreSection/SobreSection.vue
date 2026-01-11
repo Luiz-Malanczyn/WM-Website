@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 import { useSobreSection } from './composables/useSobreSection'
 import './styles.css'
 
@@ -7,6 +7,14 @@ import certificado9001 from '../../assets/WM INDUSTRIA 9001.pdf'
 import certificado9001IQNET from '../../assets/WM INDUSTRIA 9001 IQNET.pdf'
 import certificado14001 from '../../assets/ISO 14001.pdf'
 import certificado14001IOQNET from '../../assets/ISO 14001 IQNET.pdf'
+
+onMounted(() => {
+  window.addEventListener('open-certificates-popup', openPopup)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('open-certificates-popup', openPopup)
+})
 
 const { historiaText, capacidadeText } = useSobreSection()
 
