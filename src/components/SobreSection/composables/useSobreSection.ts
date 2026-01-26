@@ -6,7 +6,7 @@ export const useSobreSection = () => {
     eficiência, qualidade e inovação.
     Localizada estrategicamente na cidade de Araucária/PR, a empresa dispõe de uma ampla estrutura com 35.000 m² de área total, 
     preparada para atender às mais diversas demandas do mercado.
-    Desde 2016, a WM Termoplásticos é certificada pela ISO 9001, após 2025 pela ISO 14001 e IATF 16949, reafirmando seu compromisso 
+    É certificada pela ISO 9001, pela ISO 14001 e IATF 16949, reafirmando seu compromisso 
     com a qualidade, a melhoria contínua, satisfação dos clientes, ampliando seu foco em sustentabilidade ambiental e conformidade 
     com os rigorosos padrões do setor automotivo.
     Na WM, cada projeto é conduzido com responsabilidade, precisão e parceria, buscando sempre entregar soluções completas e 
