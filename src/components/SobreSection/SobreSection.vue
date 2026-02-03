@@ -101,8 +101,16 @@ const closePopup = () => {
             src="../../assets/imagem-certificados.png" 
             alt="Certificados" 
             @click="openPopup"
-            style="cursor: pointer;"
+            class="certificados-img"
           />
+
+          <span 
+            class="certificados-text"
+            @click="openPopup"
+          >
+            CERTIFICADOS
+          </span>
+
           <div v-if="isPreviewVisible" class="preview-container">
             <div v-for="pdf in pdfs" :key="pdf.name" class="preview-item">
               &#x1F4CE; {{ pdf.name }}

@@ -91,12 +91,18 @@
   align-items: center;
   margin-top: auto;
   position: relative;
+  cursor: pointer;
 }
 
 .certificates img {
   max-width: 25%;
   height: auto;
   margin-top: 2rem;
+}
+
+.certificados-text {
+  font-size: 4vh;
+  color: #DC3703;
 }
 
 .segundo-sobre {

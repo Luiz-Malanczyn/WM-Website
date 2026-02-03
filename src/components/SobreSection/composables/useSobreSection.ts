@@ -15,8 +15,10 @@ export const useSobreSection = () => {
   const capacidadeText = ref(`A WM Termoplásticos conta com um parque fabril composto por 22 injetoras de plástico, 
     com capacidades que variam de 80 a 800 toneladas de força de fechamento. Com o objetivo de aumentar a eficiência 
     produtiva, investimos continuamente na automatização de nossos processos, por meio da integração de robôs e esteiras 
-    transportadoras. Além disso, dispomos de uma sala de metrologia equipada com máquina de medição tridimensional e outros 
-    instrumentos de precisão, o que nos permite manter um rigoroso controle de qualidade em todas as etapas do processo.`)
+    transportadoras. Transportadoras e sistema Lean Manufacturing 4.0 combina os princípios de produção enxuta (redução 
+    de desperdícios e valor ao cliente) com tecnologias da Indústria 4.0. Além disso, dispomos de uma sala de metrologia 
+    equipada com máquina de medição tridimensional e outros instrumentos de precisão, o que nos permite manter um rigoroso 
+    controle de qualidade em todas as etapas do processo.`)
 
   return {
     historiaText,
