@@ -2,12 +2,7 @@
 import { useNavBar, menuItems } from './composables/useNavBar'
 import './styles.css'
 
-const { isScrolled } = useNavBar()
-
-const scrollToCertificados = () => {
-  document.querySelector('#certificados')?.scrollIntoView({ behavior: 'smooth' })
-  window.dispatchEvent(new CustomEvent('open-certificates-popup'))
-}
+const { isScrolled, scrollToSobre, openCertificate } = useNavBar()
 </script>
 
 <template>
@@ -20,24 +15,26 @@ const scrollToCertificados = () => {
       <template v-for="item in menuItems" :key="item.name">
 
         <a
-          v-if="item.name !== 'Sobre Nós'"
+          v-if="!item.children"
           :href="item.href"
         >
           {{ item.name }}
         </a>
 
         <div v-else class="nav-cert-wrapper">
-          <a :href="item.href">
+          <a href="#sobre" @click.prevent="scrollToSobre">
             {{ item.name }}
             <span class="nav-cert-arrow">▾</span>
           </a>
 
           <div class="nav-cert-menu">
             <div
+              v-for="child in item.children"
+              :key="child.name"
               class="nav-cert-item"
-              @click="scrollToCertificados"
+              @click="openCertificate(child.index)"
             >
-              📎 Certificados
+              📎 {{ child.name }}
             </div>
           </div>
         </div>
@@ -46,5 +43,3 @@ const scrollToCertificados = () => {
     </div>
   </nav>
 </template>
-
-
