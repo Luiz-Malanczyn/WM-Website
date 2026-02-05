@@ -35,6 +35,6 @@
   }
 
   .client-logo {
-    height: 40px;
+    max-width: 30vw;
   }
 }
