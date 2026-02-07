@@ -1,6 +1,6 @@
 .navbar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   padding: 1.5vh 1.5%;
   position: fixed;
@@ -16,8 +16,7 @@
 }
 
 .logo {
-  width: 12%;
-  max-width: 220px;
+  width: 20%;
   transition: width 0.5s ease;
 }
 
@@ -32,9 +31,8 @@
 
 .menu {
   display: flex;
-  width: 100%;
-  justify-content: center;
-  margin-top: 0.6vh;
+  width: 60%;
+  justify-content: flex-end;
 }
 
 .menu a {
@@ -115,6 +113,12 @@
 
 
 @media (max-width: 768px) {
+  .menu {
+    width: 100%;
+    justify-content: center;
+    margin-top: 0.6vh;
+  }
+
   .menu a {
     font-size: 3vw;
     padding: 1vh 2vw;
@@ -135,4 +139,8 @@
   .nav-cert-item {
     font-size: 3vw;
   }
+  
+  .navbar {
+  flex-direction: column;
+}
 }

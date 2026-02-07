@@ -7,6 +7,7 @@ import certificado9001 from '../../assets/WM INDUSTRIA 9001.pdf'
 import certificado9001IQNET from '../../assets/WM INDUSTRIA 9001 IQNET.pdf'
 import certificado14001 from '../../assets/ISO 14001.pdf'
 import certificado14001IOQNET from '../../assets/ISO 14001 IQNET.pdf'
+import certificado16949 from '../../assets/WM INDÚSTRIA IATF 16949.pdf'
 
 const { historiaText, capacidadeText } = useSobreSection()
 
@@ -18,7 +19,8 @@ const pdfs = [
   { name: 'Certificado ISO 9001', path: certificado9001 },
   { name: 'Certificado ISO 9001 IQNET', path: certificado9001IQNET },
   { name: 'Certificado ISO 14001', path: certificado14001 },
-  { name: 'Certificado ISO 14001 IQNET', path: certificado14001IOQNET }
+  { name: 'Certificado ISO 14001 IQNET', path: certificado14001IOQNET },
+  { name: 'Certificado IATF 16949', path: certificado16949 }
 ]
 
 const openPopup = (index?: number) => {
