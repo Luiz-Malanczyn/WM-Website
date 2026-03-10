@@ -7,7 +7,7 @@ import certificado9001 from '../../assets/WM INDUSTRIA 9001.pdf'
 import certificado9001IQNET from '../../assets/WM INDUSTRIA 9001 IQNET.pdf'
 import certificado14001 from '../../assets/ISO 14001.pdf'
 import certificado14001IOQNET from '../../assets/ISO 14001 IQNET.pdf'
-import certificado16949 from '../../assets/WM INDÚSTRIA IATF 16949.pdf'
+import certificado16949 from '../../assets/WM INDUSTRIA IATF 16949.pdf'
 
 const { historiaText, capacidadeText } = useSobreSection()
 
@@ -129,7 +129,7 @@ onUnmounted(() => {
   <section id="parceiros">
     <h2 class="parceiros-title">Nossos Parceiros</h2>
     <div class="parceiros-container">
-      <img src="../../assets/imagem-parceiros-HUNIV.png" alt="HUNIV" />
+      <img src="../../assets/imagem-parceiros-QUALITY.png" alt="QUALITY" />
       <img src="../../assets/imagem-parceiros-BWI.png" alt="BWI" />
       <img src="../../assets/imagem-parceiros-WM-Treinamentos.png" alt="WM Treinamentos" />
     </div>

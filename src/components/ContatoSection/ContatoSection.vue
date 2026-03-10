@@ -35,7 +35,10 @@ import './styles.css'
 
       <div class="contact-box">
         <h3>{{ contactInfo.recursosHumanos.titulo }}</h3>
-        <p v-for="(celular, index) in contactInfo.recursosHumanos.celulares" :key="'cel-fin-' + index">
+        <p v-for="(telefone, index) in contactInfo.recursosHumanos.telefones" :key="'tel-rh-' + index">
+          Telefone: {{ telefone }}
+        </p>
+        <p v-for="(celular, index) in contactInfo.recursosHumanos.celulares" :key="'cel-rh-' + index">
           Celular: {{ celular }}
         </p>
         <p>Email: {{ contactInfo.recursosHumanos.email }}</p>
