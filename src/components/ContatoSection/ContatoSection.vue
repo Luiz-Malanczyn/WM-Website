@@ -1,6 +1,31 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import { contactInfo } from './composables/useContatoSection'
 import './styles.css'
+
+const complaint = ref('')
+const category = ref('')
+
+const submitComplaint = async () => {
+  if (!complaint.value.trim()) {
+    alert('Por favor, descreva a denúncia.')
+    return
+  }
+
+  const response = await fetch('https://formspree.io/f/mkoqbdld', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ categoria: category.value, denuncia: complaint.value })
+  })
+
+  if (response.ok) {
+    alert('Denúncia enviada anonimamente com sucesso!')
+    complaint.value = ''
+    category.value = ''
+  } else {
+    alert('Erro ao enviar a denúncia. Tente novamente.')
+  }
+}
 </script>
 
 <template>
@@ -43,6 +68,24 @@ import './styles.css'
         </p>
         <p>Email: {{ contactInfo.recursosHumanos.email }}</p>
         <p>{{ contactInfo.recursosHumanos.descricao }}</p>
+      </div>
+
+      <div class="contact-box">
+        <h3>Canal de Denúncia Anônima</h3>
+        <p>Envie sua denúncia de forma anônima. Sua privacidade é garantida.</p>
+        <form @submit.prevent="submitComplaint">
+          <label for="category">Categoria:</label>
+          <select id="category" v-model="category">
+            <option value="">Selecione uma categoria</option>
+            <option value="geral">Geral</option>
+            <option value="servico">Serviço</option>
+            <option value="produto">Produto</option>
+            <option value="outro">Outro</option>
+          </select>
+          <label for="complaint">Descrição da Denúncia:</label>
+          <textarea id="complaint" v-model="complaint" placeholder="Descreva sua denúncia aqui..." required></textarea>
+          <button type="submit">Enviar Denúncia</button>
+        </form>
       </div>
     </div>
   </section>
