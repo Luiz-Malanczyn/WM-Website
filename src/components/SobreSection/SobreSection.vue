@@ -8,6 +8,7 @@ import certificado9001IQNET from '../../assets/WM INDUSTRIA 9001 IQNET.pdf'
 import certificado14001 from '../../assets/ISO 14001.pdf'
 import certificado14001IOQNET from '../../assets/ISO 14001 IQNET.pdf'
 import certificado16949 from '../../assets/WM INDUSTRIA IATF 16949.pdf'
+import duns_number from '../../assets/Duns_Number_WM.pdf'
 
 const { historiaText, capacidadeText } = useSobreSection()
 
@@ -20,7 +21,8 @@ const pdfs = [
   { name: 'Certificado ISO 9001 IQNET', path: certificado9001IQNET },
   { name: 'Certificado ISO 14001', path: certificado14001 },
   { name: 'Certificado ISO 14001 IQNET', path: certificado14001IOQNET },
-  { name: 'Certificado IATF 16949', path: certificado16949 }
+  { name: 'Certificado IATF 16949', path: certificado16949 },
+  { name: 'Duns Number', path: duns_number }
 ]
 
 const openPopup = (index?: number) => {
@@ -131,7 +133,6 @@ onUnmounted(() => {
     <div class="parceiros-container">
       <img src="../../assets/imagem-parceiros-QUALITY.png" alt="QUALITY" />
       <img src="../../assets/imagem-parceiros-BWI.png" alt="BWI" />
-      <img src="../../assets/imagem-parceiros-WM-Treinamentos.png" alt="WM Treinamentos" />
     </div>
   </section>
 

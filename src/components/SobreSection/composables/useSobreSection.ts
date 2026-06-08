@@ -12,8 +12,8 @@ export const useSobreSection = () => {
     Na WM, cada projeto é conduzido com responsabilidade, precisão e parceria, buscando sempre entregar soluções completas e 
     personalizadas, com alto valor agregado.`)
 
-  const capacidadeText = ref(`A WM Termoplásticos conta com um parque fabril composto por 22 injetoras de plástico, 
-    com capacidades que variam de 80 a 800 toneladas de força de fechamento. Com o objetivo de aumentar a eficiência 
+  const capacidadeText = ref(`A WM Termoplásticos conta com um parque fabril composto por 23 injetoras de plástico, 
+    com capacidades que variam de 80 a 1050 toneladas de força de fechamento. Com o objetivo de aumentar a eficiência 
     produtiva, investimos continuamente na automatização de nossos processos, por meio da integração de robôs, esteiras 
     transportadoras e sistema Lean Manufacturing 4.0, que combina os princípios de produção enxuta (redução 
     de desperdícios e valor ao cliente) com tecnologias da Indústria 4.0. Além disso, dispomos de uma sala de metrologia 

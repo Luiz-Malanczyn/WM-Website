@@ -50,7 +50,8 @@ export const menuItems = [
       { name: 'ISO 9001 IQNET', index: 1 },
       { name: 'ISO 14001', index: 2 },
       { name: 'ISO 14001 IQNET', index: 3 },
-      { name: 'IATF 16949', index: 4 }
+      { name: 'IATF 16949', index: 4 },
+      { name: 'DUNS NUMBER', index: 5 }
     ]
   },
   { name: 'Serviços', href: '#servicos' },
