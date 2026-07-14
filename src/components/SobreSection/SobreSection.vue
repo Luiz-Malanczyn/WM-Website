@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted, onUnmounted, computed } from 'vue'
 import { useSobreSection } from './composables/useSobreSection'
 import './styles.css'
 
@@ -9,6 +9,7 @@ import certificado14001 from '../../assets/ISO 14001.pdf'
 import certificado14001IOQNET from '../../assets/ISO 14001 IQNET.pdf'
 import certificado16949 from '../../assets/WM INDUSTRIA IATF 16949.pdf'
 import duns_number from '../../assets/Duns_Number_WM.pdf'
+import politicaQualidade from '../../assets/politica_qualidade.jpg'
 
 const { historiaText, capacidadeText } = useSobreSection()
 
@@ -23,6 +24,7 @@ const pdfs = [
   { name: 'Certificado ISO 14001 IQNET', path: certificado14001IOQNET },
   { name: 'Certificado IATF 16949', path: certificado16949 },
   { name: 'Duns Number', path: duns_number }
+  ,{ name: 'Política da Qualidade', path: politicaQualidade }
 ]
 
 const openPopup = (index?: number) => {
@@ -50,6 +52,12 @@ onMounted(() => {
     'open-certificates-popup',
     handleOpenCertificatesPopup
   )
+})
+
+const currentPath = computed(() => pdfs[activeTabIndex.value]?.path)
+const isPdf = computed(() => {
+  const p = currentPath.value || ''
+  return p.toLowerCase().endsWith('.pdf')
 })
 
 onUnmounted(() => {
@@ -138,7 +146,7 @@ onUnmounted(() => {
 
   <teleport to="body">
     <div v-if="isPopupVisible" class="popup-overlay" @click.self="closePopup">
-      <div class="popup-content">
+      <div class="popup-content" :class="{ 'image-popup': !isPdf }">
         <button class="close-button" @click="closePopup">&times;</button>
 
         <h2>Nossos Certificados</h2>
@@ -155,11 +163,17 @@ onUnmounted(() => {
         </div>
 
         <div class="pdf-content-area">
-          <iframe
-            :src="pdfs[activeTabIndex].path"
-            class="pdf-viewer"
-            title="Visualizador de PDF"
-          />
+          <div class="pdf-viewer-wrapper">
+            <iframe
+              v-if="isPdf"
+              :src="currentPath"
+              class="pdf-viewer"
+              title="Visualizador de PDF"
+            />
+            <div v-else class="image-viewer">
+              <img :src="currentPath" alt="Documento" class="image-preview" />
+            </div>
+          </div>
         </div>
       </div>
     </div>

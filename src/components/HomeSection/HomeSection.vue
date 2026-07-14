@@ -3,6 +3,10 @@ import { useHomeSection } from './composables/useHomeSection'
 import './styles.css'
 
 const { title, description, iso9001Logo, iso14001Logo, iatfLogo } = useHomeSection()
+
+const openPolicy = () => {
+  window.dispatchEvent(new CustomEvent('open-certificates-popup', { detail: { index: 6 } }))
+}
 </script>
 
 <template>
@@ -21,8 +25,7 @@ const { title, description, iso9001Logo, iso14001Logo, iatfLogo } = useHomeSecti
       <p class="intro-text">
         Injeção em peças plásticas técnicas, montagem de subconjunto, tampografia, hot-stamping, embalagem e toda a logística de entrega.
       </p>
-      <h2>Política de qualidade</h2>
-      <p>{{ description }}</p>
+      <p class="policy-link-container"><span class="policy-link" @click="openPolicy">Política de qualidade</span></p>
     </div>
   </section>
 </template>
