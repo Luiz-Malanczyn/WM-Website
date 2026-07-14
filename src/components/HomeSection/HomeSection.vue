@@ -2,7 +2,7 @@
 import { useHomeSection } from './composables/useHomeSection'
 import './styles.css'
 
-const { title, description, iso9001Logo, iso14001Logo, iatfLogo } = useHomeSection()
+const { title, iso9001Logo, iso14001Logo, iatfLogo } = useHomeSection()
 
 const openPolicy = () => {
   window.dispatchEvent(new CustomEvent('open-certificates-popup', { detail: { index: 6 } }))
