@@ -140,8 +140,8 @@ onUnmounted(() => {
     <h2 class="parceiros-title">Nossos Parceiros</h2>
     <div class="parceiros-container">
       <img class="parceiro-quality" src="../../assets/imagem-parceiros-QUALITY.png" alt="QUALITY" />
-      <img src="../../assets/imagem-parceiros-BWI.png" alt="BWI" />
-      <img src="../../assets/LOGO AMS SEM FUNDO.png" alt="AMS" />
+      <img class="parceiro-bwi" src="../../assets/imagem-parceiros-BWI.png" alt="BWI" />
+      <img class="parceiro-ams" src="../../assets/LOGO AMS SEM FUNDO.png" alt="AMS" />
     </div>
   </section>
 
