@@ -177,6 +177,10 @@
   object-fit: contain;
 }
 
+.parceiro-quality {
+  transform: scale(0.8);
+}
+
 .preview-container {
   position: absolute;
   bottom: 105%;
